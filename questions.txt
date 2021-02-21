@@ -1,0 +1,68 @@
+Questions:
+    1*. Bugetul
+        "Cat ati fi dispus sa dati...?"
+    2. Tipul de aplicatie?
+        Office / Gaming / Design?
+    
+    Use-case related
+
+        C1: Gaming
+            1. Ce joc(uri) ati dori sa rulati pe el?
+                Jocul cu specurile cele mai mari -> filtrare
+            2*. Cat de bine sa ruleze jocul?
+                Decent / bine / foarte bine
+        
+        C2: Design / Development
+            1. Ce aplicatii doriti sa rulati?
+                Aplicatia cu specurile cele mai mari -> filtrare
+            2*. Cat de bine sa ruleze aplicatiile?
+                Decent / bine / foarte bine
+        
+        C3: Office
+            1. Spatiu de stocare optimizat pentru stocare / viteza / ambele
+                SSD / HDD / ambele
+
+    Component-related
+
+        CPU:
+            1. Producator
+            2. Frecventa
+            3. No. of cores
+            4. Socket
+            5*. Power consumption
+            6*. Model nucleu
+        GPU:
+            1. Producator
+            2. Serie
+            3. Memorie video
+            4. Interfata (PCIe 3.0/4.0)
+            5. Porturi de iesire (HDMI/DP/DVI/VGA)
+            6*. Power consumption
+        RAM:
+            1. Capacitate
+            2*. Producator
+            3. Tip (DDR3/DDR4)
+            4. Frecventa
+            5. Latenta CAS
+        SSD:
+            1. Capacitate
+            2*. Producator
+            3. Interfata
+            4. Viteza (GBPS)
+        HDD:
+            1. Capacitate
+            2*. Producator
+            3. Viteza (RPM)
+        Optical Unit:
+            1. Type (DVD/Blu-Ray)
+        MOBO:
+            1. Format (ATX/mATX/etc.)
+            2. CPU Socket
+            3. Tip memorie (DDRx)
+            4. Interfata grafica (PCIe 3.0/4.0)
+            5. Wi-FI/BT
+        PSU:
+            1. Putere
+            2. Modulara / Semi-modualra / Non-modulara
+        Case:
+            1. Sursa sus/jos
