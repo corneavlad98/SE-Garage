@@ -24,45 +24,45 @@ Questions:
 
     Component-related
 
-        CPU:
+        CPU: - Vlad
             1. Producator
             2. Frecventa
             3. No. of cores
             4. Socket
             5*. Power consumption
             6*. Model nucleu
-        GPU:
+        GPU: - Tomas
             1. Producator
             2. Serie
             3. Memorie video
             4. Interfata (PCIe 3.0/4.0)
             5. Porturi de iesire (HDMI/DP/DVI/VGA)
             6*. Power consumption
-        RAM:
+        RAM: - Vlad
             1. Capacitate
             2*. Producator
             3. Tip (DDR3/DDR4)
             4. Frecventa
             5. Latenta CAS
-        SSD:
+        SSD: - Tomas
             1. Capacitate
             2*. Producator
             3. Interfata
             4. Viteza (GBPS)
-        HDD:
+        HDD: - Vlad
             1. Capacitate
             2*. Producator
             3. Viteza (RPM)
-        Optical Unit:
+        Optical Unit: - Vlad
             1. Type (DVD/Blu-Ray)
-        MOBO:
+        MOBO: - Tomas
             1. Format (ATX/mATX/etc.)
             2. CPU Socket
             3. Tip memorie (DDRx)
             4. Interfata grafica (PCIe 3.0/4.0)
             5. Wi-FI/BT
-        PSU:
+        PSU: - Tomas
             1. Putere
             2. Modulara / Semi-modualra / Non-modulara
-        Case:
+        Case: - Vlad
             1. Sursa sus/jos
