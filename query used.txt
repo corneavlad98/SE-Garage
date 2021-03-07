@@ -1,0 +1,29 @@
+insert into PC ("Placa de baza", "Procesor", "RAM", "Placa video", "Sursa", "SSD", "HDD", "Unitate optica", "Pret")
+select PlacaDeBaza.Id, Procesor.Id, RAM.Id, PlacaVideo.Id, Sursa.Id, SSD.Id, HDD.Id, [Unitate optica].Id, (PlacaDeBaza.Pret+Procesor.Pret+RAM.Pret+PlacaVideo.Pret+Sursa.Pret+SSD.Pret+HDD.Pret+[Unitate optica].Pret)
+FROM PlacaDeBaza
+INNER JOIN Procesor ON PlacaDeBaza."Socket procesor" = Procesor.Socket
+INNER JOIN RAM ON PlacaDeBaza."Memorie suportata" = RAM.Tip AND RAM.Frecventa < PlacaDeBaza."Frecventa memorie"
+INNER JOIN PlacaVideo ON 1=1
+INNER JOIN Sursa ON (Procesor.[Putere totala disipata] + PlacaVideo."Putere totala disipata" + 250) <= Sursa.Putere AND (Procesor.[Putere totala disipata] + PlacaVideo."Putere totala disipata" + 350) > Sursa.Putere
+INNER JOIN SSD ON (PlacaDeBaza."Interfata SSD" like 'PCI%' AND SSD.Interfata like 'PCI%') OR (PlacaDeBaza."Interfata SSD" like 'SATA%' AND SSD.Interfata like 'SATA%')
+INNER JOIN HDD ON 1=1
+INNER JOIN [Unitate optica] ON 1=1
+ORDER BY PlacaDeBaza.Id
+
+select * from PC
+order by Pret
+
+delete from PC where Id > 0
+
+
+DBCC CHECKIDENT('PC', RESEED, 0)
+
+
+
+
+
+
+placaDeBaza - (1,2,6) -> AM4
+procesor - (2,3,6) -> AM4
+
+PC: (1,2) (1,3) (1,6) (2,2) (2,3) (2,6) (6,2) (6,3) (6,6)

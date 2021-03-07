@@ -1,0 +1,10 @@
+C:\Users\Vlad\Desktop\SE-Garage\SE-Garage\SE-Garage\bin\Debug\SE-Garage.exe.config
+C:\Users\Vlad\Desktop\SE-Garage\SE-Garage\SE-Garage\bin\Debug\SE-Garage.exe
+C:\Users\Vlad\Desktop\SE-Garage\SE-Garage\SE-Garage\bin\Debug\SE-Garage.pdb
+C:\Users\Vlad\Desktop\SE-Garage\SE-Garage\SE-Garage\obj\Debug\SE-Garage.csprojAssemblyReference.cache
+C:\Users\Vlad\Desktop\SE-Garage\SE-Garage\SE-Garage\obj\Debug\SE_Garage.Form1.resources
+C:\Users\Vlad\Desktop\SE-Garage\SE-Garage\SE-Garage\obj\Debug\SE_Garage.Properties.Resources.resources
+C:\Users\Vlad\Desktop\SE-Garage\SE-Garage\SE-Garage\obj\Debug\SE-Garage.csproj.GenerateResource.cache
+C:\Users\Vlad\Desktop\SE-Garage\SE-Garage\SE-Garage\obj\Debug\SE-Garage.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Desktop\SE-Garage\SE-Garage\SE-Garage\obj\Debug\SE-Garage.exe
+C:\Users\Vlad\Desktop\SE-Garage\SE-Garage\SE-Garage\obj\Debug\SE-Garage.pdb
