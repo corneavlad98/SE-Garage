@@ -38,6 +38,7 @@ namespace SE_Garage
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.result1Label = new System.Windows.Forms.Label();
             this.result2Label = new System.Windows.Forms.Label();
+            this.exitButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,18 +46,20 @@ namespace SE_Garage
             // 
             this.question1Label.AutoSize = true;
             this.question1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.question1Label.Location = new System.Drawing.Point(38, 104);
+            this.question1Label.Location = new System.Drawing.Point(51, 128);
+            this.question1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.question1Label.Name = "question1Label";
-            this.question1Label.Size = new System.Drawing.Size(168, 24);
+            this.question1Label.Size = new System.Drawing.Size(215, 29);
             this.question1Label.TabIndex = 0;
             this.question1Label.Text = "Care este bugetul?";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(234, 297);
+            this.button1.Location = new System.Drawing.Point(473, 370);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 42);
+            this.button1.Size = new System.Drawing.Size(144, 52);
             this.button1.TabIndex = 4;
             this.button1.Text = "SAVE";
             this.button1.UseVisualStyleBackColor = true;
@@ -66,9 +69,10 @@ namespace SE_Garage
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Ebrima", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(180, 9);
+            this.titleLabel.Location = new System.Drawing.Point(227, 9);
+            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(211, 47);
+            this.titleLabel.Size = new System.Drawing.Size(261, 60);
             this.titleLabel.TabIndex = 6;
             this.titleLabel.Text = "SE GARAGE";
             // 
@@ -76,9 +80,10 @@ namespace SE_Garage
             // 
             this.question2Label.AutoSize = true;
             this.question2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.question2Label.Location = new System.Drawing.Point(38, 188);
+            this.question2Label.Location = new System.Drawing.Point(51, 231);
+            this.question2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.question2Label.Name = "question2Label";
-            this.question2Label.Size = new System.Drawing.Size(139, 24);
+            this.question2Label.Size = new System.Drawing.Size(182, 29);
             this.question2Label.TabIndex = 7;
             this.question2Label.Text = "Tipul aplicatiei?";
             // 
@@ -90,41 +95,45 @@ namespace SE_Garage
             "Office",
             "Gaming",
             "Design"});
-            this.comboBox1.Location = new System.Drawing.Point(223, 188);
+            this.comboBox1.Location = new System.Drawing.Point(297, 231);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(144, 28);
+            this.comboBox1.Size = new System.Drawing.Size(191, 33);
             this.comboBox1.TabIndex = 11;
             // 
             // currency1Label
             // 
             this.currency1Label.AutoSize = true;
             this.currency1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currency1Label.Location = new System.Drawing.Point(385, 105);
+            this.currency1Label.Location = new System.Drawing.Point(513, 129);
+            this.currency1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.currency1Label.Name = "currency1Label";
-            this.currency1Label.Size = new System.Drawing.Size(29, 24);
+            this.currency1Label.Size = new System.Drawing.Size(39, 29);
             this.currency1Label.TabIndex = 12;
             this.currency1Label.Text = "lei";
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(223, 105);
+            this.numericUpDown1.Location = new System.Drawing.Point(297, 129);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(144, 26);
+            this.numericUpDown1.Size = new System.Drawing.Size(192, 30);
             this.numericUpDown1.TabIndex = 13;
             // 
             // result1Label
             // 
             this.result1Label.AutoSize = true;
             this.result1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.result1Label.Location = new System.Drawing.Point(90, 406);
+            this.result1Label.Location = new System.Drawing.Point(100, 500);
+            this.result1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.result1Label.Name = "result1Label";
-            this.result1Label.Size = new System.Drawing.Size(69, 24);
+            this.result1Label.Size = new System.Drawing.Size(89, 29);
             this.result1Label.TabIndex = 14;
             this.result1Label.Text = "(woop)";
             // 
@@ -132,17 +141,31 @@ namespace SE_Garage
             // 
             this.result2Label.AutoSize = true;
             this.result2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.result2Label.Location = new System.Drawing.Point(422, 406);
+            this.result2Label.Location = new System.Drawing.Point(528, 500);
+            this.result2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.result2Label.Name = "result2Label";
-            this.result2Label.Size = new System.Drawing.Size(69, 24);
+            this.result2Label.Size = new System.Drawing.Size(89, 29);
             this.result2Label.TabIndex = 15;
             this.result2Label.Text = "(woop)";
             // 
-            // Form1
+            // exitButton
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.Location = new System.Drawing.Point(105, 370);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(4);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(144, 52);
+            this.exitButton.TabIndex = 16;
+            this.exitButton.Text = "EXIT";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 475);
+            this.ClientSize = new System.Drawing.Size(710, 585);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.result2Label);
             this.Controls.Add(this.result1Label);
             this.Controls.Add(this.numericUpDown1);
@@ -152,8 +175,9 @@ namespace SE_Garage
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.question1Label);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "MainForm";
+            this.Text = "Main";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -171,6 +195,7 @@ namespace SE_Garage
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label result1Label;
         private System.Windows.Forms.Label result2Label;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 

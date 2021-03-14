@@ -73,20 +73,31 @@ namespace SE_Garage
                 result2Label.Text = question2Text;
                 if(question2Text.Equals("Gaming"))
                 {
+                    this.Hide();
                     var nextForm = new GamingForm();
-                    nextForm.Show();
+                    nextForm.ShowDialog();
+                    this.Show();
                 }
                 if (question2Text.Equals("Office"))
                 {
+                    this.Hide();
                     var nextForm = new OfficeForm();
-                    nextForm.Show();
+                    nextForm.ShowDialog();
+                    this.Show();
                 }
                 if (question2Text.Equals("Design"))
                 {
+                    this.Hide();
                     var nextForm = new DesignForm();
-                    nextForm.Show();
+                    nextForm.ShowDialog();
+                    this.Show();
                 }
             }          
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

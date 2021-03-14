@@ -16,5 +16,23 @@ namespace SE_Garage
         {
             InitializeComponent();
         }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            List<string> selectedApps = new List<string>();
+            foreach (object game in listBox1.SelectedItems)
+            {
+                selectedApps.Add(game.ToString());
+            }
+            var test = selectedApps;
+
+            MessageBox.Show(String.Join(", ", selectedApps));
+
+        }
     }
 }

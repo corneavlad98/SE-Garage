@@ -17,6 +17,15 @@ namespace SE_Garage
             InitializeComponent();
         }
 
-      
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            var result1 = comboBox1.Text;
+            MessageBox.Show(result1);
+        }
     }
 }
