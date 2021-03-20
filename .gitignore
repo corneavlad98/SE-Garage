@@ -4,3 +4,11 @@
 
 /.vs
 /SE-Garage/SE-Garage/obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+
+documentation/doc_tex/doc_tex.aux
+documentation/doc_tex/doc_tex.fdb_latexmk
+documentation/doc_tex/doc_tex.fls
+documentation/doc_tex/doc_tex.log
+documentation/doc_tex/doc_tex.out
+documentation/doc_tex/doc_tex.synctex.gz
+documentation/doc_tex/doc_tex.toc
