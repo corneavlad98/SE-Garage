@@ -51,11 +51,13 @@
   <ItemGroup>
     <Compile Include="Classes\Globals.cs" />
     <Compile Include="Classes\HDD.cs" />
+    <Compile Include="Classes\InferenceMachine.cs" />
     <Compile Include="Classes\PC.cs" />
     <Compile Include="Classes\PlacaDeBaza.cs" />
     <Compile Include="Classes\PlacaVideo.cs" />
     <Compile Include="Classes\Procesor.cs" />
     <Compile Include="Classes\RAM.cs" />
+    <Compile Include="Classes\Regula.cs" />
     <Compile Include="Classes\SSD.cs" />
     <Compile Include="Classes\Sursa.cs" />
     <Compile Include="Classes\UnitateOptica.cs" />
