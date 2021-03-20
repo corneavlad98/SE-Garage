@@ -371,6 +371,21 @@ namespace SE_Garage
 
             Globals.pcList = setAllPCs();
 
+            /*var filtered = Globals.pcList.Select(pc => pc)
+                                         .Where(pc => pc.ID == 69)
+                                         .ToList();*/
+
+          
+
+            List<object> list = new List<object>();
+            DataTable dtbl = initializeDataTable("SELECT * FROM Regula");
+
+            foreach (DataRow row in dtbl.Rows)
+            {
+                var regula = row;
+                var PC = Globals.pcList[Convert.ToInt32(regula[33]) - 1];
+            }
+
         }
     }
 }
