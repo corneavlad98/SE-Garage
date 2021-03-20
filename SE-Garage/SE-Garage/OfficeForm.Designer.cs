@@ -40,10 +40,9 @@ namespace SE_Garage
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Ebrima", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(184, 9);
-            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.titleLabel.Location = new System.Drawing.Point(12, 9);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(446, 60);
+            this.titleLabel.Size = new System.Drawing.Size(360, 47);
             this.titleLabel.TabIndex = 8;
             this.titleLabel.Text = "SE GARAGE - OFFICE";
             // 
@@ -51,12 +50,11 @@ namespace SE_Garage
             // 
             this.question1Label.AutoSize = true;
             this.question1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.question1Label.Location = new System.Drawing.Point(44, 183);
-            this.question1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.question1Label.Location = new System.Drawing.Point(95, 183);
             this.question1Label.Name = "question1Label";
-            this.question1Label.Size = new System.Drawing.Size(382, 29);
+            this.question1Label.Size = new System.Drawing.Size(297, 24);
             this.question1Label.TabIndex = 9;
-            this.question1Label.Text = "Spatiu de stocare optimizat pentru:";
+            this.question1Label.Text = "Spațiu de stocare optimizat pentru:";
             // 
             // comboBox1
             // 
@@ -66,19 +64,21 @@ namespace SE_Garage
             "Stocare",
             "Viteza",
             "Ambele"});
-            this.comboBox1.Location = new System.Drawing.Point(480, 183);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Location = new System.Drawing.Point(422, 183);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(191, 33);
+            this.comboBox1.Size = new System.Drawing.Size(144, 28);
             this.comboBox1.TabIndex = 13;
             // 
             // saveButton
             // 
+            this.saveButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.saveButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.saveButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButton.Location = new System.Drawing.Point(557, 345);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saveButton.Location = new System.Drawing.Point(514, 357);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(144, 52);
+            this.saveButton.Size = new System.Drawing.Size(108, 42);
             this.saveButton.TabIndex = 14;
             this.saveButton.Text = "SAVE";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -86,11 +86,14 @@ namespace SE_Garage
             // 
             // backButton
             // 
+            this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.backButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.backButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(115, 345);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4);
+            this.backButton.Location = new System.Drawing.Point(62, 357);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(144, 52);
+            this.backButton.Size = new System.Drawing.Size(108, 42);
             this.backButton.TabIndex = 15;
             this.backButton.Text = "BACK";
             this.backButton.UseVisualStyleBackColor = true;
@@ -98,16 +101,17 @@ namespace SE_Garage
             // 
             // OfficeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(837, 456);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(684, 461);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.question1Label);
             this.Controls.Add(this.titleLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "OfficeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OfficeForm";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -40,10 +40,9 @@ namespace SE_Garage
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Ebrima", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(192, 9);
-            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.titleLabel.Location = new System.Drawing.Point(12, 9);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(463, 60);
+            this.titleLabel.Size = new System.Drawing.Size(374, 47);
             this.titleLabel.TabIndex = 8;
             this.titleLabel.Text = "SE GARAGE - DESIGN";
             // 
@@ -51,18 +50,17 @@ namespace SE_Garage
             // 
             this.question1Label.AutoSize = true;
             this.question1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.question1Label.Location = new System.Drawing.Point(55, 222);
-            this.question1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.question1Label.Location = new System.Drawing.Point(217, 106);
             this.question1Label.Name = "question1Label";
-            this.question1Label.Size = new System.Drawing.Size(312, 29);
+            this.question1Label.Size = new System.Drawing.Size(238, 24);
             this.question1Label.TabIndex = 9;
-            this.question1Label.Text = "Ce aplicatii ati dori sa rulati?";
+            this.question1Label.Text = "Ce aplicații ați dori să rulați?";
             // 
             // listBox1
             // 
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 22;
+            this.listBox1.ItemHeight = 18;
             this.listBox1.Items.AddRange(new object[] {
             "Adobe Photoshop",
             "Adobe Ilustrator",
@@ -72,20 +70,22 @@ namespace SE_Garage
             "Autodesk 3ds Max",
             "PaintShop Pro",
             "Autodesk Maya"});
-            this.listBox1.Location = new System.Drawing.Point(443, 125);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.listBox1.Location = new System.Drawing.Point(221, 133);
             this.listBox1.Name = "listBox1";
             this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listBox1.Size = new System.Drawing.Size(327, 224);
+            this.listBox1.Size = new System.Drawing.Size(246, 166);
             this.listBox1.TabIndex = 10;
             // 
             // saveButton
             // 
+            this.saveButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.saveButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.saveButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButton.Location = new System.Drawing.Point(626, 442);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(4);
+            this.saveButton.Location = new System.Drawing.Point(514, 357);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(144, 52);
+            this.saveButton.Size = new System.Drawing.Size(108, 42);
             this.saveButton.TabIndex = 12;
             this.saveButton.Text = "SAVE";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -93,11 +93,14 @@ namespace SE_Garage
             // 
             // backButton
             // 
+            this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.backButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.backButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(121, 442);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4);
+            this.backButton.Location = new System.Drawing.Point(62, 357);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(144, 52);
+            this.backButton.Size = new System.Drawing.Size(108, 42);
             this.backButton.TabIndex = 16;
             this.backButton.Text = "BACK";
             this.backButton.UseVisualStyleBackColor = true;
@@ -105,16 +108,17 @@ namespace SE_Garage
             // 
             // DesignForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(894, 554);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(684, 461);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.question1Label);
             this.Controls.Add(this.titleLabel);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DesignForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DesignForm";
             this.ResumeLayout(false);
             this.PerformLayout();

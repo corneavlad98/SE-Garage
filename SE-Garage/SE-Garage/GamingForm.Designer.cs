@@ -42,10 +42,9 @@ namespace SE_Garage
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Ebrima", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(215, 9);
-            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.titleLabel.Location = new System.Drawing.Point(12, 9);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(487, 60);
+            this.titleLabel.Size = new System.Drawing.Size(393, 47);
             this.titleLabel.TabIndex = 7;
             this.titleLabel.Text = "SE GARAGE - GAMING";
             // 
@@ -53,18 +52,17 @@ namespace SE_Garage
             // 
             this.question1Label.AutoSize = true;
             this.question1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.question1Label.Location = new System.Drawing.Point(48, 190);
-            this.question1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.question1Label.Location = new System.Drawing.Point(46, 159);
             this.question1Label.Name = "question1Label";
-            this.question1Label.Size = new System.Drawing.Size(289, 29);
+            this.question1Label.Size = new System.Drawing.Size(223, 24);
             this.question1Label.TabIndex = 8;
-            this.question1Label.Text = "Ce jocuri ati dori sa rulati?";
+            this.question1Label.Text = "Ce jocuri ați dori să rulați?";
             // 
             // listBox1
             // 
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 22;
+            this.listBox1.ItemHeight = 18;
             this.listBox1.Items.AddRange(new object[] {
             "Grand Theft Auto V",
             "Minecraft",
@@ -81,31 +79,32 @@ namespace SE_Garage
             "Terraria",
             "Borderlands 3",
             "Star Wars Battlefront II 2017"});
-            this.listBox1.Location = new System.Drawing.Point(397, 112);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.listBox1.Location = new System.Drawing.Point(315, 88);
             this.listBox1.Name = "listBox1";
             this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listBox1.Size = new System.Drawing.Size(396, 224);
+            this.listBox1.Size = new System.Drawing.Size(298, 166);
             this.listBox1.TabIndex = 9;
             // 
             // question2Label
             // 
             this.question2Label.AutoSize = true;
             this.question2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.question2Label.Location = new System.Drawing.Point(48, 407);
-            this.question2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.question2Label.Location = new System.Drawing.Point(46, 286);
             this.question2Label.Name = "question2Label";
-            this.question2Label.Size = new System.Drawing.Size(336, 29);
+            this.question2Label.Size = new System.Drawing.Size(263, 24);
             this.question2Label.TabIndex = 10;
-            this.question2Label.Text = "Cat de bine sa ruleze jocurile?";
+            this.question2Label.Text = "Cât de bine să ruleze jocurile?";
             // 
             // saveButton
             // 
+            this.saveButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.saveButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.saveButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButton.Location = new System.Drawing.Point(649, 552);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(4);
+            this.saveButton.Location = new System.Drawing.Point(514, 357);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(144, 52);
+            this.saveButton.Size = new System.Drawing.Size(108, 42);
             this.saveButton.TabIndex = 11;
             this.saveButton.Text = "SAVE";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -119,19 +118,21 @@ namespace SE_Garage
             "Decent",
             "Bine",
             "Foarte bine"});
-            this.comboBox1.Location = new System.Drawing.Point(480, 407);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Location = new System.Drawing.Point(315, 282);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(202, 33);
+            this.comboBox1.Size = new System.Drawing.Size(152, 28);
             this.comboBox1.TabIndex = 12;
             // 
             // backButton
             // 
+            this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.backButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.backButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(119, 552);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4);
+            this.backButton.Location = new System.Drawing.Point(62, 357);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(144, 52);
+            this.backButton.Size = new System.Drawing.Size(108, 42);
             this.backButton.TabIndex = 13;
             this.backButton.Text = "BACK";
             this.backButton.UseVisualStyleBackColor = true;
@@ -139,9 +140,10 @@ namespace SE_Garage
             // 
             // GamingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 638);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(684, 461);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.saveButton);
@@ -149,8 +151,8 @@ namespace SE_Garage
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.question1Label);
             this.Controls.Add(this.titleLabel);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GamingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gaming";
             this.ResumeLayout(false);
             this.PerformLayout();

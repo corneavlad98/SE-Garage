@@ -62,8 +62,6 @@ namespace SE_Garage
             }
             if (!question1Value.Equals(0) && !question2Text.Equals(""))
             {
-                result1Label.Text = question1Value.ToString() + " lei";
-                result2Label.Text = question2Text;
                 if(question2Text.Equals("Gaming"))
                 {
                     this.Hide();
