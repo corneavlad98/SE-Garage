@@ -18,5 +18,6 @@ namespace SE_Garage.Classes
         public static List<UnitateOptica> opticalDriveList = new List<UnitateOptica>();
 
         public static List<PC> pcList = new List<PC>();
+        public static List<Regula> ruleList = new List<Regula>();
     }
 }

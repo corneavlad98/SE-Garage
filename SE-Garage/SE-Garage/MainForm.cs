@@ -18,6 +18,31 @@ namespace SE_Garage
         {
             InitializeComponent();
 
+            Globals.procesorList = setAllProcesors();
+            Globals.motherBoardList = setAllMotherBoards();
+            Globals.videoCardList = setAllVideoCards();
+            Globals.ramList = setAllRAM();
+            Globals.ssdList = setAllSSD();
+            Globals.hddList = setAllHDD();
+            Globals.powerUnitList = setAllPowerUnits();
+            //Globals.opticalDriveList = setAllOpticUnits();
+
+            Globals.pcList = setAllPCs();
+
+            /*var filtered = Globals.pcList.Select(pc => pc)
+                                         .Where(pc => pc.ID == 69)
+                                         .ToList();*/
+
+
+
+            DataTable dtbl = initializeDataTable("SELECT * FROM Regula");
+
+            foreach (DataRow row in dtbl.Rows)
+            {
+                Regula regula = new Regula(row);
+                Globals.ruleList.Add(regula);
+            }
+
         }
 
         private void getData(string query)
@@ -326,9 +351,6 @@ namespace SE_Garage
             }
             return opticaList;
         }
-
-
-
         private List<PC> setAllPCs()
         {
             List<PC> pcList = new List<PC>();
@@ -355,34 +377,12 @@ namespace SE_Garage
             return pcList;
         }
 
+        
+
         private void testButton_Click(object sender, EventArgs e)
         {
 
-            Globals.procesorList = setAllProcesors();
-            Globals.motherBoardList = setAllMotherBoards();
-            Globals.videoCardList = setAllVideoCards();
-            Globals.ramList = setAllRAM();
-            Globals.ssdList = setAllSSD();
-            Globals.hddList = setAllHDD();
-            Globals.powerUnitList = setAllPowerUnits();
-            //Globals.opticalDriveList = setAllOpticUnits();
-
-            Globals.pcList = setAllPCs();
-
-            /*var filtered = Globals.pcList.Select(pc => pc)
-                                         .Where(pc => pc.ID == 69)
-                                         .ToList();*/
-
-          
-
-            List<object> list = new List<object>();
-            DataTable dtbl = initializeDataTable("SELECT * FROM Regula");
-
-            foreach (DataRow row in dtbl.Rows)
-            {
-                var regula = row;
-                var PC = Globals.pcList[Convert.ToInt32(regula[33]) - 1];
-            }
+            var test = Globals.ruleList;
 
         }
     }

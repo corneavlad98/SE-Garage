@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -90,6 +91,16 @@ namespace SE_Garage.Classes
             }
 
             ruleOutput = output;
+        }
+        public Regula(DataRow row)
+        {
+            ruleFields = new Boolean[(int)RuleFields.RULE_LAST_RULE];
+
+            for (int index = (int)(RuleFields.RULE_FIRST_RULE + 1); index < (int)RuleFields.RULE_LAST_RULE; index++)
+            {
+                ruleFields[index] = Convert.ToBoolean(row[index + 1]);
+            }
+            ruleOutput = Convert.ToInt32(row[33]);
         }
 
         public void activateField(RuleFields field)
