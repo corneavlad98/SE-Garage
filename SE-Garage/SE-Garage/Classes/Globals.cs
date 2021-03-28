@@ -8,6 +8,8 @@ namespace SE_Garage.Classes
 {
     class Globals
     {
+        public static Regula inputRule = new Regula();
+
         public static List<Procesor> procesorList = new List<Procesor>();
         public static List<PlacaDeBaza> motherBoardList = new List<PlacaDeBaza>();
         public static List<PlacaVideo> videoCardList = new List<PlacaVideo>();

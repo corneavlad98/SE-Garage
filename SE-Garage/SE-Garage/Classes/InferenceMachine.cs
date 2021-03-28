@@ -30,29 +30,15 @@ namespace SE_Garage.Classes
             return match;
         }
 
-        public int checkMatchAndGetOutput(Regula lhs, Regula rhs)
+        public List<int> checkRuleAgainstKnowledgeBase(List<Regula> kb, Regula regula)
         {
-            int output = -1;
+            List<int> output = new List<int>();
 
-            if(checkRuleMatch(lhs, rhs))
+            foreach(Regula currentRule in kb)
             {
-                int lhsOutput = lhs.generateOutput();
-                int rhsOutput = rhs.generateOutput();
-
-                if (lhsOutput != rhsOutput)
+                if(checkRuleMatch(currentRule, regula))
                 {
-                    if (lhsOutput == -1 && rhsOutput != -1)
-                    {
-                        output = rhsOutput;
-                    }
-                    else if (lhsOutput != -1 && rhsOutput == -1)
-                    {
-                        output = lhsOutput;
-                    }
-                }
-                else
-                {
-                    output = lhsOutput;
+                    output.Add(currentRule.generateOutput());
                 }
             }
 

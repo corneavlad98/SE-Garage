@@ -18,6 +18,8 @@ namespace SE_Garage
         {
             InitializeComponent();
 
+            Globals.inputRule = new Regula();
+
             Globals.procesorList = setAllProcesors();
             Globals.motherBoardList = setAllMotherBoards();
             Globals.videoCardList = setAllVideoCards();
@@ -89,24 +91,42 @@ namespace SE_Garage
             {
                 if(question2Text.Equals("Gaming"))
                 {
+                    Globals.inputRule.activateField(RuleFields.RULE_APPL_GAMING);
+                    Globals.inputRule.deactivateField(RuleFields.RULE_APPL_DESIGN);
+                    Globals.inputRule.deactivateField(RuleFields.RULE_APPL_OFFICE);
+
                     this.Hide();
                     var nextForm = new GamingForm();
                     nextForm.ShowDialog();
                     this.Show();
+
+                    recommendButton.Enabled = true;
                 }
                 if (question2Text.Equals("Office"))
                 {
+                    Globals.inputRule.deactivateField(RuleFields.RULE_APPL_GAMING);
+                    Globals.inputRule.deactivateField(RuleFields.RULE_APPL_DESIGN);
+                    Globals.inputRule.activateField(RuleFields.RULE_APPL_OFFICE);
+
                     this.Hide();
                     var nextForm = new OfficeForm();
                     nextForm.ShowDialog();
                     this.Show();
+
+                    recommendButton.Enabled = true;
                 }
                 if (question2Text.Equals("Design"))
                 {
+                    Globals.inputRule.deactivateField(RuleFields.RULE_APPL_GAMING);
+                    Globals.inputRule.activateField(RuleFields.RULE_APPL_DESIGN);
+                    Globals.inputRule.deactivateField(RuleFields.RULE_APPL_OFFICE);
+
                     this.Hide();
                     var nextForm = new DesignForm();
                     nextForm.ShowDialog();
                     this.Show();
+
+                    recommendButton.Enabled = true;
                 }
             }          
         }
@@ -119,7 +139,7 @@ namespace SE_Garage
 
         private DataTable initializeDataTable(string query)
         {
-            string constring = @"Data Source=(LocalDb)\SE_DB;Initial Catalog=ComputerComponents;Integrated Security=True";
+            string constring = @"Data Source=(LocalDb)\TomasDB;Initial Catalog=ComputerComponents;Integrated Security=True";
             SqlConnection sqlCon = new SqlConnection(constring);
             SqlDataAdapter sqlad = new SqlDataAdapter(query, sqlCon);
             DataTable dtbl = new DataTable();
@@ -351,6 +371,7 @@ namespace SE_Garage
             }
             return opticaList;
         }
+
         private List<PC> setAllPCs()
         {
             List<PC> pcList = new List<PC>();
@@ -377,13 +398,29 @@ namespace SE_Garage
             return pcList;
         }
 
-        
-
-        private void testButton_Click(object sender, EventArgs e)
+        private void recommendButton_Click(object sender, EventArgs e)
         {
+            InferenceMachine inferenceMachine = new InferenceMachine();
 
-            var test = Globals.ruleList;
+            List<int> recommendedPCs = inferenceMachine.checkRuleAgainstKnowledgeBase(Globals.ruleList, Globals.inputRule);
 
+            if(recommendedPCs.Count > 0)
+            {
+                foreach (int pcId in recommendedPCs)
+                {
+                    PC pc = Globals.pcList.ElementAt(pcId);
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ne pare rău, nu am putut găsi o combinație de componente care să satisfacă criteriile.",
+                                "Fără succes",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            }
+
+            Globals.inputRule.clearRule();
         }
     }
 }

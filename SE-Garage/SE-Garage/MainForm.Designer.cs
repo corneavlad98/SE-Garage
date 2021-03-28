@@ -37,7 +37,7 @@ namespace SE_Garage
             this.currency1Label = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.exitButton = new System.Windows.Forms.Button();
-            this.testButton = new System.Windows.Forms.Button();
+            this.recommendButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,16 +137,21 @@ namespace SE_Garage
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // testButton
+            // recommendButton
             // 
-            this.testButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testButton.Location = new System.Drawing.Point(293, 407);
-            this.testButton.Name = "testButton";
-            this.testButton.Size = new System.Drawing.Size(108, 42);
-            this.testButton.TabIndex = 17;
-            this.testButton.Text = "TEST";
-            this.testButton.UseVisualStyleBackColor = true;
-            this.testButton.Click += new System.EventHandler(this.testButton_Click);
+            this.recommendButton.Enabled = false;
+            this.recommendButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.recommendButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.recommendButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.recommendButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.recommendButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recommendButton.Location = new System.Drawing.Point(250, 357);
+            this.recommendButton.Name = "recommendButton";
+            this.recommendButton.Size = new System.Drawing.Size(200, 42);
+            this.recommendButton.TabIndex = 17;
+            this.recommendButton.Text = "RECOMMEND";
+            this.recommendButton.UseVisualStyleBackColor = true;
+            this.recommendButton.Click += new System.EventHandler(this.recommendButton_Click);
             // 
             // MainForm
             // 
@@ -154,7 +159,7 @@ namespace SE_Garage
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(684, 461);
-            this.Controls.Add(this.testButton);
+            this.Controls.Add(this.recommendButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.currency1Label);
@@ -165,7 +170,7 @@ namespace SE_Garage
             this.Controls.Add(this.question1Label);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main";
+            this.Text = "ExpertGarage";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -182,7 +187,7 @@ namespace SE_Garage
         private System.Windows.Forms.Label currency1Label;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button exitButton;
-        private System.Windows.Forms.Button testButton;
+        private System.Windows.Forms.Button recommendButton;
     }
 }
 

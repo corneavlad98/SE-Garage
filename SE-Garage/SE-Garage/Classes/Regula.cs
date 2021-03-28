@@ -57,6 +57,18 @@ namespace SE_Garage.Classes
 
         public int ruleOutput;
 
+        public Regula()
+        {
+            ruleFields = new Boolean[(int)RuleFields.RULE_LAST_RULE];
+
+            for (int index = (int)(RuleFields.RULE_FIRST_RULE + 1); index < (int)RuleFields.RULE_LAST_RULE; index++)
+            {
+                ruleFields[index] = false;
+            }
+
+            ruleOutput = 0;
+        }
+
         public Regula(int output)
         {
             ruleFields = new Boolean[(int)RuleFields.RULE_LAST_RULE];
@@ -92,6 +104,7 @@ namespace SE_Garage.Classes
 
             ruleOutput = output;
         }
+
         public Regula(DataRow row)
         {
             ruleFields = new Boolean[(int)RuleFields.RULE_LAST_RULE];
@@ -113,9 +126,29 @@ namespace SE_Garage.Classes
             ruleFields[(int)field] = false;
         }
 
+        public void setField(RuleFields field, Boolean value)
+        {
+            ruleFields[(int)field] = value;
+        }
+
         public int generateOutput()
         {
             return ruleOutput;
+        }
+
+        public void setOutput(int desiredOutput)
+        {
+            ruleOutput = desiredOutput;
+        }
+
+        public void clearRule()
+        {
+            for (int index = (int)(RuleFields.RULE_FIRST_RULE + 1); index < (int)RuleFields.RULE_LAST_RULE; index++)
+            {
+                ruleFields[index] = false;
+            }
+
+            ruleOutput = 0;
         }
     }
 }
