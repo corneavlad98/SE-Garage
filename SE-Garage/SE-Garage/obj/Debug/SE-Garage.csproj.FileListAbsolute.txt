@@ -24,3 +24,4 @@ C:\Users\corne\Desktop\SE-Garage\SE-Garage\SE-Garage\obj\Debug\SE-Garage.csproj.
 C:\Users\corne\Desktop\SE-Garage\SE-Garage\SE-Garage\obj\Debug\SE-Garage.csproj.CoreCompileInputs.cache
 C:\Users\corne\Desktop\SE-Garage\SE-Garage\SE-Garage\obj\Debug\SE-Garage.exe
 C:\Users\corne\Desktop\SE-Garage\SE-Garage\SE-Garage\obj\Debug\SE-Garage.pdb
+C:\Users\Vlad\Desktop\SE-Garage\SE-Garage\SE-Garage\obj\Debug\SE_Garage.ResultForm.resources

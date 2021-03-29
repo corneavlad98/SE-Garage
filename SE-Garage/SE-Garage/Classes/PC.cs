@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE_Garage.Classes
 {
-    class PC
+    public class PC
     {
         public int ID;
         public PlacaDeBaza placaDeBaza;

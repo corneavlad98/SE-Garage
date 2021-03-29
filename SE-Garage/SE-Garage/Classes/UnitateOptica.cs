@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE_Garage.Classes
 {
-    class UnitateOptica
+    public class UnitateOptica
     {
         public int ID;
         public string Producator;

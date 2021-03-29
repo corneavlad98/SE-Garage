@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE_Garage.Classes
 {
-    class PlacaDeBaza
+    public class PlacaDeBaza
     {
         public int ID;
         public string Producator;

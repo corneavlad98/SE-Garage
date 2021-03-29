@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE_Garage.Classes
 {
-    class HDD
+    public class HDD
     {
         public int ID;
         public string Producator;

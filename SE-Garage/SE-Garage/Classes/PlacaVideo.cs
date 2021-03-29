@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE_Garage.Classes
 {
-    class PlacaVideo
+    public class PlacaVideo
     {
         public int ID;
         public string Producator;

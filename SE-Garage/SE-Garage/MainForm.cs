@@ -31,12 +31,6 @@ namespace SE_Garage
 
             Globals.pcList = setAllPCs();
 
-            /*var filtered = Globals.pcList.Select(pc => pc)
-                                         .Where(pc => pc.ID == 69)
-                                         .ToList();*/
-
-
-
             DataTable dtbl = initializeDataTable("SELECT * FROM Regula");
 
             foreach (DataRow row in dtbl.Rows)
@@ -139,7 +133,7 @@ namespace SE_Garage
 
         private DataTable initializeDataTable(string query)
         {
-            string constring = @"Data Source=(LocalDb)\TomasDB;Initial Catalog=ComputerComponents;Integrated Security=True";
+            string constring = @"Data Source=(LocalDb)\SE_DB;Initial Catalog=ComputerComponents;Integrated Security=True";
             SqlConnection sqlCon = new SqlConnection(constring);
             SqlDataAdapter sqlad = new SqlDataAdapter(query, sqlCon);
             DataTable dtbl = new DataTable();
@@ -409,7 +403,15 @@ namespace SE_Garage
                 foreach (int pcId in recommendedPCs)
                 {
                     PC pc = Globals.pcList.ElementAt(pcId);
+                    StringBuilder sb = new StringBuilder();
 
+                    var question1Value = numericUpDown1.Value;
+                    var question2Text = comboBox1.Text;           
+
+                    this.Hide();
+                    var resultForm = new ResultForm(pc, question1Value, question2Text);
+                    resultForm.ShowDialog();
+                    this.Show();
                 }
             }
             else
